@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block headersection %}
+
+<section class="header-container">
+  <img class="profile-image" src="static/assets/logo_page.jpg" alt="" />
+  <h2>Hey Visitor! I'm Ahmed </h2>
+
+  <div class="content-text">
+    <h2>Just a Programmer & Cyber security expert</h2>
+    <p>
+      I have learned 8 programming languages<br>Python, Html, CSS, sql, C, JS, mql5, pine script Using My knowledge in this field
+    </p>
+  </div>
+  <a href="#footer" class="btn btn-secondary">Connect With Me</a>
+</section>
+{% endblock %}
+
+{% block body %}
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Special Skills</h2>
+    <div class="container">
+      <table style="text-align: center;">
+        <tr>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-cogs"></i></h2>
+              <h4>Reverse Engineering</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-bug"></i></h2>
+              <h4>Creating Undetectable Evil Files</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-code"></i></h2>
+              <h4>Creating CLI tools</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-server"></i></h2>
+              <h4>Virtualization</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-cloud"></i></h2>
+              <h4>Cloud</h4>
+            </div>
+          </td>
+          <td  style="padding: 20px;">
+            <div class="textcard"  style="padding: 20px;">
+              <h2><i class="fab fa-linux"></i></h2>
+              <h4>Linux</h4>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>    
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="project-container container">
+  <div class="division"></div>
+
+  <div class="content-text">
+    <h2>Popular Project</h2>
+    <p>Check out some of my projects</p>
+    <h3> <s> Coming Soon Section </s> </h3>
+  </div>
+
+  <div class="container">
+
+  </div>
+  <a href="{{url_for('projects_page')}}" class="btn btn-secondary">See More <i class="fas fa-arrow-right"></i></a>
+</section>
+{% endblock %}
